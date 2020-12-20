@@ -1,6 +1,4 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-   
+//making a decision on witch badge to use or to omit badge
 function renderLicenseBadge(license) {
   switch (license) {
     case "MIT":
@@ -23,16 +21,7 @@ function renderLicenseBadge(license) {
 
   }
 }
-
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-//function renderLicenseLink(license) {}
-
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-//function renderLicenseSection(license) {}
-
-//creating the optional sections
+// making or omitting insaltt text
 const generateInstall = installText => {
   if (!installText) {
       return "";
@@ -45,7 +34,7 @@ const generateInstall = installText => {
   
   `
 }
-
+// making or omitting usage text
 const generateUsage = usageText => {
   if (!usageText) {
       return "";
@@ -58,6 +47,7 @@ const generateUsage = usageText => {
   
   `
 }
+// making or omitting contribution text
 const generateContribute = contributeText => {
   if (!contributeText) {
       return "";
@@ -70,6 +60,7 @@ const generateContribute = contributeText => {
   
   `
 }
+// making or omitting test text
 const generateTest = testText => {
   if (!testText) {
       return "";
@@ -82,7 +73,7 @@ const generateTest = testText => {
   
   `
 }
-// TODO: Create a function to generate markdown for README
+//function to make complete readme file
 function generateMarkdown(data) {
   return `#${data.title}
 ${data.description}
