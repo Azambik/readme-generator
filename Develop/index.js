@@ -1,5 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require("inquirer");
+const generateMarkdown = require("./utils/generateMarkdown");
+const { writeFile, copyFile } = require("./utils/saveAndCopyt");
 // TODO: Create an array of questions for user input
 //const questions = [];
 
@@ -161,7 +163,7 @@ const promptUser = () =>{
             type: "list",
             name: "license",
             message:"What license is used for this project?",
-            choices: ["MIT", "GPL 3.0" , "Apache 2.0", "GPL 2.0" , "BSD" , "LGPL" , "Ms-PI"]
+            choices: ["MIT", "GPL 3.0" , "Apache 2.0", "GPL 2.0" , "LGPL" , "none"]
           },
     ]);
 };
@@ -175,4 +177,11 @@ const promptUser = () =>{
 
 // Function call to initialize app
 //init();
-promptUser();
+promptUser()
+    .then(input => {
+       return generateMarkdown(input);
+      //console.log(input)
+    })
+    .then(pageMarkdown => {
+        return writeFile(pageMarkdown);
+    })
