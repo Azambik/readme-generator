@@ -2,7 +2,7 @@ Readme-generator
   
   
   ------------------
-  #Table of contents
+  Table of contents
   ------------------
 
   [Description](#description)
