@@ -3,20 +3,11 @@
   ------------------
   #Table of contents
   ------------------
-  
-  [Description](#description)
-    
+  [Description](#description) 
   [install](#installation)
-  
-    
   [Usage](#usage)
-   
-    
   [Contribute](#contribute)
-  
-    
   [Test](#testing)
-  
   [Created by](#createdby)
   
   ##description <a name="description"></a>
