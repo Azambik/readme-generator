@@ -26,27 +26,27 @@ Readme-generator
     This project takes user prompted input and generates a well layed out readme file. 
 
   
-  ##Installation <a name="installation"></a>
+  Installation <a name="installation"></a>
   
     Install requierd files using npm intall
   
   
-  ##Usage <a name="usage"></a>
+  Usage <a name="usage"></a>
     
     follow the prompts and input information as requested
     video demo of app https://www.youtube.com/watch?v=kR4vHH9JQ5Y&feature=youtu.be
   
   
-  ##Contribute <a name="contribute"></a>
+  Contribute <a name="contribute"></a>
   
     class mates, teachers, TAs and friends.
   
   
-  ##Testing instructions <a name="testing"></a>
+  Testing instructions <a name="testing"></a>
   
     Type node index in the command console and follow the prompt. 
   
-  #created by <a name="createdby"></a>
+  created by <a name="createdby"></a>
 
     Andrew Zambik
     contact me at: Andrewjzambik@yahoo.com
