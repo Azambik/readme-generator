@@ -105,29 +105,35 @@ const generateTable = data => {
   ------------------
   #Table of contents
   ------------------
-  
+
   [Description](#description)
     ${tocInstall(data.install)}
     ${tocUsage(data.usage)} 
     ${tocContribute(data.contribute)}
     ${tocTest(data.test)}
   [Created by](#createdby)
+
   `
 }
 //function to make complete readme file
 function generateMarkdown(data) {
   return `#${data.title}
+  
   ${generateTable(data)}
   ##description <a name="description"></a>
-  ${data.description}
+  
+    ${data.description}
+
   ${generateInstall(data.install)}
   ${generateUsage(data.usage)}
   ${generateContribute(data.contribute)}
   ${generateTest(data.test)}
   #created by <a name="createdby"></a>
-  ${data.name}
-  contact me at: ${data.email}
-  My github : https://github.com/${data.git}
+
+    ${data.name}
+    contact me at: ${data.email}
+  #My github : [https://github.com/${data.git}](https://github.com/${data.git})
+  
   ${renderLicenseBadge(data.license)}
 `;
 }
