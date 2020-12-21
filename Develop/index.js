@@ -172,8 +172,9 @@ const promptUser = () =>{
 //prompting user and then having the readme file made
 promptUser()
     .then(input => {
+        console.log(input)
        return generateMarkdown(input);
-      //console.log(input)
+      
     })
     .then(pageMarkdown => {
         return writeFile(pageMarkdown);

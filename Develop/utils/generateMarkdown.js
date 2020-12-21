@@ -26,12 +26,10 @@ const generateInstall = installText => {
   if (!installText) {
       return "";
   }
-
   return `
-  ##Installation
+  ##Installation <a name="installation"></a>
   
     ${installText}
-  
   `
 }
 // making or omitting usage text
@@ -41,10 +39,9 @@ const generateUsage = usageText => {
   }
 
   return `
-  ##Usage
+  ##Usage <a name="usage"></a>
   
     ${usageText}
-  
   `
 }
 // making or omitting contribution text
@@ -54,10 +51,9 @@ const generateContribute = contributeText => {
   }
 
   return `
-  ##Contribute
+  ##Contribute <a name="contribute"></a>
   
     ${contributeText}
-  
   `
 }
 // making or omitting test text
@@ -67,29 +63,78 @@ const generateTest = testText => {
   }
 
   return `
-  ##Testing instructions
+  ##Testing instructions <a name="testing"></a>
   
     ${testText}
-  
+  `
+}
+const tocInstall = installText => {
+  if (!installText) {
+      return "";
+  }
+  return `
+  [install](#installation)
+  `
+}
+const tocUsage = usageText => {
+  if (!usageText) {
+      return "";
+  }
+  return `
+  [Usage](#usage)
+  `
+}
+const tocContribute = contributeText => {
+  if (!contributeText) {
+      return "";
+  }
+  return `
+  [Contribute](#contribute)
+  `
+}
+const tocTest = contributeText => {
+  if (!contributeText) {
+      return "";
+  }
+  return `
+  [Test](#testing)
+  `
+}
+const generateTable = data => {
+  return `
+  ------------------
+  #Table of contents
+  ------------------
+
+  [Description](#description)
+    ${tocInstall(data.install)}
+    ${tocUsage(data.usage)} 
+    ${tocContribute(data.contribute)}
+    ${tocTest(data.test)}
+  [Created by](#createdby)
+
   `
 }
 //function to make complete readme file
 function generateMarkdown(data) {
   return `#${data.title}
-${data.description}
-${generateInstall(data.install)}
-${generateUsage(data.usage)}
-${generateContribute(data.contribute)}
-${generateTest(data.test)}
-#created by
-${data.name}
-    
- contact me at: ${data.email}
- My github : https://github.com/${data.git}
-${renderLicenseBadge(data.license)}
-   
+  
+  ${generateTable(data)}
+  ##description <a name="description"></a>
+  
+    ${data.description}
 
+  ${generateInstall(data.install)}
+  ${generateUsage(data.usage)}
+  ${generateContribute(data.contribute)}
+  ${generateTest(data.test)}
+  #created by <a name="createdby"></a>
 
+    ${data.name}
+    contact me at: ${data.email}
+  #My github : [https://github.com/${data.git}](https://github.com/${data.git})
+  
+  ${renderLicenseBadge(data.license)}
 `;
 }
 
