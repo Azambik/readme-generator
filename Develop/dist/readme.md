@@ -1,8 +1,8 @@
-#Readme-generator
+#dfasd
   
   
   ------------------
-  #Table of contents
+  Table of contents
   ------------------
 
   [Description](#description)
@@ -21,35 +21,35 @@
   [Created by](#createdby)
 
   
-  ##description <a name="description"></a>
+  description <a name="description"></a>
   
-    this is it
+    asdf
 
   
-  ##Installation <a name="installation"></a>
+  Installation <a name="installation"></a>
+  
+    dsfa
+  
+  
+  Usage <a name="usage"></a>
   
     asdf
   
   
-  ##Usage <a name="usage"></a>
+  Contribute <a name="contribute"></a>
   
     asdf
   
   
-  ##Contribute <a name="contribute"></a>
+  Testing instructions <a name="testing"></a>
   
     asdf
   
-  
-  ##Testing instructions <a name="testing"></a>
-  
-    asdf
-  
-  #created by <a name="createdby"></a>
+  created by <a name="createdby"></a>
 
-    Andrew zambik
-    contact me at: andrewjzambik@yahoo.com
-  #My github : [https://github.com/azambik](https://github.com/azambik)
+    dfa
+    contact me at: asdf
+  My github : [https://github.com/asdf](https://github.com/asdf)
   
-  ## License[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  ## License[![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
     

@@ -117,7 +117,7 @@ const generateTable = data => {
 }
 //function to make complete readme file
 function generateMarkdown(data) {
-  return `#${data.title}
+  return `${data.title}
   
   ${generateTable(data)}
   description <a name="description"></a>
