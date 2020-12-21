@@ -1,14 +1,14 @@
 #Readme-generator
   
-  ------------------
-  #Table of contents
-  ------------------
-  [Description](#description) 
-  [install](#installation)
-  [Usage](#usage)
-  [Contribute](#contribute)
-  [Test](#testing)
-  [Created by](#createdby)
+------------------
+#Table of contents
+------------------
+ [Description](#description) 
+ [install](#installation)
+ [Usage](#usage)
+ [Contribute](#contribute)
+ [Test](#testing)
+ [Created by](#createdby)
   
   ##description <a name="description"></a>
   Readme-generator takes users input from a prompt to fill out a readme file and format it into a compleate file. 
