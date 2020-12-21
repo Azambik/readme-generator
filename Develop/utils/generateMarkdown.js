@@ -1,4 +1,4 @@
-#Readme-generator
+#eadme-generator
   
 ------------------
 #Table of contents
