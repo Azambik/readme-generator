@@ -27,7 +27,7 @@ const generateInstall = installText => {
       return "";
   }
   return `
-  ##Installation <a name="installation"></a>
+  Installation <a name="installation"></a>
   
     ${installText}
   `
@@ -39,7 +39,7 @@ const generateUsage = usageText => {
   }
 
   return `
-  ##Usage <a name="usage"></a>
+  Usage <a name="usage"></a>
   
     ${usageText}
   `
@@ -51,7 +51,7 @@ const generateContribute = contributeText => {
   }
 
   return `
-  ##Contribute <a name="contribute"></a>
+  Contribute <a name="contribute"></a>
   
     ${contributeText}
   `
@@ -63,7 +63,7 @@ const generateTest = testText => {
   }
 
   return `
-  ##Testing instructions <a name="testing"></a>
+  Testing instructions <a name="testing"></a>
   
     ${testText}
   `
@@ -103,7 +103,7 @@ const tocTest = contributeText => {
 const generateTable = data => {
   return `
   ------------------
-  #Table of contents
+  Table of contents
   ------------------
 
   [Description](#description)
@@ -120,7 +120,7 @@ function generateMarkdown(data) {
   return `#${data.title}
   
   ${generateTable(data)}
-  ##description <a name="description"></a>
+  description <a name="description"></a>
   
     ${data.description}
 
@@ -128,11 +128,11 @@ function generateMarkdown(data) {
   ${generateUsage(data.usage)}
   ${generateContribute(data.contribute)}
   ${generateTest(data.test)}
-  #created by <a name="createdby"></a>
+  created by <a name="createdby"></a>
 
     ${data.name}
     contact me at: ${data.email}
-  #My github : [https://github.com/${data.git}](https://github.com/${data.git})
+  My github : [https://github.com/${data.git}](https://github.com/${data.git})
   
   ${renderLicenseBadge(data.license)}
 `;
